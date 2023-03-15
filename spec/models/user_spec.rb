@@ -48,4 +48,29 @@ RSpec.describe User, type: :model do
     end
 
   end
+
+  describe '.authenticate_with_credentials' do
+
+    it 'should allow user with valid credientials to log in' do
+      @user = User.new(first_name: 'Juju', last_name: 'Sur', email: 'juju@hotmeow.com', password: '1234', password_confirmation: '1234')
+      @user.save
+      @valid_user = User.authenticate_with_credentials('juju@hotmeow.com', '1234')
+      expect(@valid_user).to_not eq(nil)
+    end
+
+    it 'should still allow user with valid credientials to log in when email input contains white spaces before and after' do
+      @user = User.new(first_name: 'Juju', last_name: 'Sur', email: 'juju@hotmeow.com', password: '1234', password_confirmation: '1234')
+      @user.save
+      @valid_user = User.authenticate_with_credentials('  juju@hotmeow.com   ', '1234')
+      expect(@valid_user).to_not eq(nil)
+    end
+
+    it 'should still allow user with valid credientials to log in when email input is in the wrong case' do
+      @user = User.new(first_name: 'Juju', last_name: 'Sur', email: 'juju@hotmeow.com', password: '1234', password_confirmation: '1234')
+      @user.save
+      @valid_user = User.authenticate_with_credentials('JuJu@hotMeow.com', '1234')
+      expect(@valid_user).to_not eq(nil)
+    end
+
+  end
 end
