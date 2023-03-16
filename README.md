@@ -4,10 +4,11 @@ Jungle is a mini e-commerce application built with Rails 6.1. The goal of this p
 
 ## Final Product
 
-![""]()
-![""]()
-![""]()
-![""]()
+!["header"](https://github.com/EuphieSS/jungle/blob/master/docs/header.png?raw=true)
+!["sold_out_product"](https://github.com/EuphieSS/jungle/blob/master/docs/sold_out_product.png?raw=true)
+!["empty_cart"](https://github.com/EuphieSS/jungle/blob/master/docs/empty_cart.png?raw=true)
+!["admin_dash"](https://github.com/EuphieSS/jungle/blob/master/docs/admin_dash.png?raw=true)
+!["admin_product"](https://github.com/EuphieSS/jungle/blob/master/docs/admin_product.png?raw=true)
 
 ## Setup
 
