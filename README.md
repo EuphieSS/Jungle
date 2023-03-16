@@ -1,6 +1,13 @@
-# Jungle
+# Welcome to the Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+Jungle is a mini e-commerce application built with Rails 6.1. The goal of this project is to practice navigating an existing code-base, and using existing code style and approach to implement new features in unfamiliar territory.
+
+## Final Product
+
+![""]()
+![""]()
+![""]()
+![""]()
 
 ## Setup
 
